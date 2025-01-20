@@ -21,12 +21,12 @@ const Navbar = () => {
         <li><a href="#faq" className="hover:text-yellow-500">FAQ</a></li>
       </ul>
 
-      {/* "Buy $FRENZY" Button */}
+      {/* "Buy $MEME" Button */}
       <button
         onClick={() => window.location.href = "https://your-buy-link.com"} // Replace with your actual link
         className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-md hidden md:block"
       >
-        Buy $FRENZY
+        Buy $MEME
       </button>
 
       {/* Hamburger Menu for smaller screens */}
@@ -34,7 +34,7 @@ const Navbar = () => {
         onClick={() => window.location.href = "https://your-buy-link.com"} 
         className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md md:hidden font-semibold"
       >
-        BUY $FRENZY
+        BUY $MEME
       </button>
       <button
         onClick={handleMenuToggle}
@@ -57,7 +57,7 @@ const Navbar = () => {
               onClick={() => window.location.href = "https://your-buy-link.com"} // Replace with your actual link
               className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-md"
             >
-              Buy $FRENZY
+              Buy $MEME
             </button>
           </ul>
         </div>

@@ -13,12 +13,12 @@ const FAQ = () => {
       answer: "Memefrenzy is a meme-based token built on the Solana blockchain, aiming to unite crypto enthusiasts through humor, engagement, and rewards.",
     },
     {
-      question: "How can I purchase $FRENZY tokens?",
-      answer: "You can purchase $FRENZY tokens on supported Solana DEXs. More details will be provided during the official launch.",
+      question: "How can I purchase $MEME tokens?",
+      answer: "You can purchase $MEME tokens on supported Solana DEXs. More details will be provided during the official launch.",
     },
     {
-      question: "What utilities does $FRENZY offer?",
-      answer: "$FRENZY supports staking, NFT integrations, meme competitions, and governance through MemeDAO to empower the community.",
+      question: "What utilities does $MEME offer?",
+      answer: "$MEME supports staking, NFT integrations, meme competitions, and governance through MemeDAO to empower the community.",
     },
     {
       question: "How do I participate in the airdrop?",

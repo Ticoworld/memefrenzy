@@ -8,6 +8,7 @@ import About from './components/About';
 import Roadmap from './components/Roadmap';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import PartnersSection from "./components/PartnersSection";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
       <Tokenomics />
       <Roadmap />
       <FAQ />
+      <PartnersSection />
       <Footer />
     </div>
   );

@@ -14,7 +14,7 @@ const Roadmap = () => {
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Q1 2025</h3>
             <ul className="space-y-2">
-              <li>Launch of Memefrenzy Token ($FRENZY) on Solana.</li>
+              <li>Launch of Memefrenzy Token ($MEME) on Solana.</li>
               <li>Initial Meme Contest and Community Airdrop.</li>
               <li>Development of MemeDAO Governance Mechanism.</li>
             </ul>
