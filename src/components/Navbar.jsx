@@ -23,7 +23,7 @@ const Navbar = () => {
 
       {/* "Buy $MEME" Button */}
       <button
-        onClick={() => window.location.href = "https://your-buy-link.com"} // Replace with your actual link
+        onClick={() => window.location.href = "#"} // Replace with your actual link
         className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-md hidden md:block"
       >
         Buy $MEME
@@ -31,7 +31,7 @@ const Navbar = () => {
 
       {/* Hamburger Menu for smaller screens */}
       <button
-        onClick={() => window.location.href = "https://your-buy-link.com"} 
+        onClick={() => window.location.href = "#"} 
         className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md md:hidden font-semibold"
       >
         BUY $MEME
@@ -54,7 +54,7 @@ const Navbar = () => {
             <li><a href="#roadmap" className="hover:text-yellow-500" onClick={() => setIsMenuOpen(false)}>Roadmap</a></li>
             <li><a href="#faq" className="hover:text-yellow-500" onClick={() => setIsMenuOpen(false)}>FAQ</a></li>
             <button
-              onClick={() => window.location.href = "https://your-buy-link.com"} // Replace with your actual link
+              onClick={() => window.location.href = "#"} // Replace with your actual link
               className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-md"
             >
               Buy $MEME

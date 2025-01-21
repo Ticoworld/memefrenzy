@@ -39,7 +39,7 @@ const Hero = () => {
 
           {/* Buy Now button */}
           <a
-            href="https://yourbuynowlink.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-md text-lg"
