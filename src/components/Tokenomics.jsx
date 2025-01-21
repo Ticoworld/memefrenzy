@@ -8,7 +8,6 @@ const Tokenomics = () => {
     { title: 'Liquidity Pool', value: '25% (250M $MEME)' },
     { title: 'Staking', value: '5% (50M $MEME)' },
     { title: 'Marketing & Partnerships', value: '10% (100M $MEME)' },
-    { title: 'Advisors', value: '5% (50M $MEME)' },
     { title: 'Team', value: '5% (50M $MEME)' },
   ];
 

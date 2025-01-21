@@ -16,10 +16,7 @@ const FAQ = () => {
       question: "How can I purchase $MEME tokens?",
       answer: "You can purchase $MEME tokens on supported Solana DEXs. More details will be provided during the official launch.",
     },
-    {
-      question: "What utilities does $MEME offer?",
-      answer: "$MEME supports staking, NFT integrations, meme competitions, and governance through MemeDAO to empower the community.",
-    },
+   
     {
       question: "How do I participate in the airdrop?",
       answer: "Follow our official social channels for updates on airdrop eligibility and participation steps.",

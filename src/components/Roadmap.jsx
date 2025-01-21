@@ -2,10 +2,7 @@ import React from 'react';
 
 const Roadmap = () => {
   return (
-    <section id="roadmap" className="bg-gray-900 text-white py-16"
-    data-aos="fade-up"
-
-    >
+    <section id="roadmap" className="bg-gray-900 text-white py-16" data-aos="fade-up">
       <div className="container mx-auto px-6 md:px-16">
         <h2 className="text-4xl font-bold text-center mb-12">Roadmap</h2>
         
@@ -16,7 +13,8 @@ const Roadmap = () => {
             <ul className="space-y-2">
               <li>Launch of Memefrenzy Token ($MEME) on Solana.</li>
               <li>Initial Meme Contest and Community Airdrop.</li>
-              <li>Development of MemeDAO Governance Mechanism.</li>
+              <li>CG & CM Listing</li>
+              <li>CEX 1 Listing</li>
             </ul>
           </div>
 

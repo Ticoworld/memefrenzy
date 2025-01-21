@@ -53,7 +53,7 @@ const Hero = () => {
           <p>Contract Address (CA):</p>
           <div className="flex justify-center items-center gap-2 mb-6">
             {/* Contract address with styled border and shadow */}
-            <div className="border-2 border-yellow-500 px-2 py-3 rounded-lg shadow-lg bg-gray-800 text-yellow-500 font-semibold flex items-center justify-between gap-2 text-sm">
+            <div className="border-2 border-yellow-500 px-2 py-3 rounded-lg shadow-lg bg-gray-800 text-yellow-500 font-semibold flex items-center justify-between gap-2 text-[10px]">
               <p>94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY</p>
               <button
                 onClick={copyToClipboard}
