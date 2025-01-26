@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="flex justify-center gap-6 mb-6">
           {/* Join the Community button */}
           <a
-            href="https://t.me/moonfrenzymeme"
+            href="https://t.me/memefrenzysol"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-md text-lg"
@@ -53,7 +53,7 @@ const Hero = () => {
           <p>Contract Address (CA):</p>
           <div className="flex justify-center items-center gap-2 mb-6">
             {/* Contract address with styled border and shadow */}
-            <div className="border-2 border-yellow-500 px-2 py-3 rounded-lg shadow-lg bg-gray-800 text-yellow-500 font-semibold flex items-center justify-between gap-2 text-[10px]">
+            <div className="border-2 border-yellow-500 px-2 py-3 rounded-lg shadow-lg bg-gray-800 text-yellow-500 font-semibold flex items-center justify-between gap-2 text-[10px] md:text-xl sm:text-lg">
               <p>94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY</p>
               <button
                 onClick={copyToClipboard}

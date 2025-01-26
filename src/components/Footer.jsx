@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex space-x-6">
             <a
-              href="https://x.com/moonfrenzysol"
+              href="https://x.com/memefrenzysol"
               target="_blank"
               rel="noopener noreferrer"
               className="text-yellow-500 hover:text-yellow-400 text-2xl"
@@ -24,7 +24,7 @@ const Footer = () => {
               <img src="/x.svg" alt="" />
             </a>
             <a
-              href="https://t.me/moonfrenzymeme"
+              href="https://t.me/memefrenzysol"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-400 text-5xl"
