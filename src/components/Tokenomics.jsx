@@ -5,7 +5,7 @@ const Tokenomics = () => {
   const tokenData = [
     { title: 'Total Supply', value: '1,000,000,000 $MEME tokens (1 BILLION total supply)' },
     { title: 'Public Sale', value: '55% (550M $MEME)' },
-    { title: 'Liquidity Pool', value: '25% (250M $MEME)' },
+    { title: 'Liquidity Pool', value: '26.6475% (266,475,000 $MEME)' },
     { title: 'Staking', value: '5% (50M $MEME)' },
     { title: 'Marketing & Partnerships', value: '10% (100M $MEME)' },
     { title: 'Team', value: '5% (50M $MEME)' },
