@@ -1,15 +1,48 @@
 import React from 'react';
+import { Pie } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Tokenomics = () => {
   // Tokenomics data as an array of objects
   const tokenData = [
     { title: 'Total Supply', value: '1,000,000,000 $MEME tokens (1 BILLION total supply)' },
-    { title: 'Public Sale', value: '55% (550M $MEME)' },
-    { title: 'Liquidity Pool', value: '26.6475% (266,475,000 $MEME)' },
-    { title: 'Staking', value: '5% (50M $MEME)' },
-    { title: 'Marketing & Partnerships', value: '10% (100M $MEME)' },
-    { title: 'Team', value: '5% (50M $MEME)' },
+    { title: 'Presale', value: '55% (550M $MEME)', percentage: 55 },
+    { title: 'Liquidity', value: '26.65% (266,475,000 $MEME)', percentage: 26.65 },
+    { title: 'CEX Liquidity', value: '17% (170M $MEME)', percentage: 17 },
+    { title: 'Team & Community', value: '1.35% (13.5M $MEME)', percentage: 1.35 },
   ];
+
+  // Data for Pie Chart
+  const pieChartData = {
+    labels: tokenData.slice(1).map((item) => item.title), // Exclude 'Total Supply' from pie chart
+    datasets: [
+      {
+        label: 'Token Distribution',
+        data: tokenData.slice(1).map((item) => item.percentage),
+        backgroundColor: [
+          '#FF6384',
+          '#36A2EB',
+          '#FFCE56',
+          '#4BC0C0',
+          '#9966FF',
+        ],
+        hoverBackgroundColor: [
+          '#FF6384',
+          '#36A2EB',
+          '#FFCE56',
+          '#4BC0C0',
+          '#9966FF',
+        ],
+      },
+    ],
+  };
 
   return (
     <section id="tokenomics" className="bg-black text-white py-16" data-aos="fade-up">
@@ -36,13 +69,10 @@ const Tokenomics = () => {
           </div>
         </div>
 
-        {/* Right Side Image */}
+        {/* Right Side Content (Pie Chart) */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
-          <img
-            src="/logo.jpg"
-            alt="Tokenomics Image"
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
+          <h3 className="text-center text-2xl font-semibold mb-4">Token Distribution</h3>
+          <Pie data={pieChartData} />
         </div>
       </div>
     </section>
