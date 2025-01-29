@@ -1,10 +1,22 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 const Hero = () => {
+  const contractAddress = "94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY";
+
   // Function to copy the contract address to clipboard
   const copyToClipboard = () => {
-    navigator.clipboard.writeText("0x1234567890abcdef1234567890abcdef12345678");
-    alert("Contract Address Copied to Clipboard!");
+    navigator.clipboard.writeText(contractAddress);
+    Swal.fire({
+      icon: "success",
+      title: "Copied!",
+      text: "Contract Address copied to clipboard.",
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+    });
   };
 
   return (
@@ -52,9 +64,9 @@ const Hero = () => {
         <div className="text-lg md:text-xl text-center">
           <p>Contract Address (CA):</p>
           <div className="flex justify-center items-center gap-2 mb-6">
-            {/* Contract address with styled border and shadow */}
+            {/* Contract address box */}
             <div className="border-2 border-yellow-500 px-2 py-3 rounded-lg shadow-lg bg-gray-800 text-yellow-500 font-semibold flex items-center justify-between gap-2 text-[10px] md:text-xl sm:text-lg">
-              <p>94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY</p>
+              <p>{contractAddress}</p>
               <button
                 onClick={copyToClipboard}
                 className="bg-gray-700 hover:bg-gray-800 text-white px-2 py-2 rounded-md text-sm"
@@ -68,4 +80,5 @@ const Hero = () => {
     </div>
   );
 };
+
 export default Hero;
