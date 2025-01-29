@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 
 const Hero = () => {
@@ -19,6 +19,43 @@ const Hero = () => {
     });
   };
 
+  // Set the countdown target time (1 day, 16 hrs, 50 mins from now)
+  const targetTime = new Date();
+  targetTime.setDate(targetTime.getDate() + 1);
+  targetTime.setHours(targetTime.getHours() + 16);
+  targetTime.setMinutes(targetTime.getMinutes() + 50);
+  targetTime.setSeconds(targetTime.getSeconds());
+
+  // State to store the remaining time
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  // Function to calculate the remaining time
+  function calculateTimeLeft() {
+    const now = new Date().getTime();
+    const difference = targetTime - now;
+
+    if (difference <= 0) {
+      return { expired: true };
+    }
+
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / (1000 * 60)) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+      expired: false,
+    };
+  }
+
+  // Effect to update countdown every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div
       className="relative bg-cover bg-center h-screen flex items-center justify-center text-center text-white"
@@ -37,6 +74,20 @@ const Hero = () => {
           Join the most exciting meme-based crypto community on Solana. Laugh,
           engage, and earn!
         </p>
+
+        {/* Countdown Timer */}
+        <div className="text-2xl font-bold mb-6">
+          {timeLeft.expired ? (
+            <span className="text-green-500 text-3xl">🚀 Presale is Live! 🚀</span>
+          ) : (
+            <p>
+              Presale starts in:{" "}
+              <span className="text-yellow-500">
+                {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
+              </span>
+            </p>
+          )}
+        </div>
 
         <div className="flex justify-center gap-6 mb-6">
           {/* Join the Community button */}
