@@ -6,7 +6,7 @@ const PartnersSection = () => {
     { name: 'CoinGecko', role: 'Listing Partner', logo: '/gec.jpg' },
     { name: 'Solana', role: 'Blockchain Partner', logo: '/solana-sol.png' },
     { name: 'DexScreener', role: 'Analytics Partner', logo: '/dex.jpg' },
-    { name: 'PinkSale', role: 'Launchpad Partner', logo: '/Pinksale.png', link: 'https://pinksale.finance' },
+    { name: 'PinkSale', role: 'Launchpad Partner', logo: '/Pinksale.png', link: 'https://www.pinksale.finance/solana/launchpad/5d5DUZXuV4Hhsyvo9m9qZEu1SfYmYZuEyEjRGCKXNFmP' },
     { name: 'Dexview', role: 'Launchpad Partner', logo: '/dexview.png', link: 'https://dexview.com' },
   ];
 
