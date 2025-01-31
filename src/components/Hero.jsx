@@ -19,20 +19,15 @@ const Hero = () => {
     });
   };
 
-  // Set the countdown target time (1 day, 16 hrs, 50 mins from now)
-  const targetTime = new Date();
-  targetTime.setDate(targetTime.getDate() + 1);
-  targetTime.setHours(targetTime.getHours() + 16);
-  targetTime.setMinutes(targetTime.getMinutes() + 50);
-  targetTime.setSeconds(targetTime.getSeconds());
+  // Target Date (Jan 31, 2025, at 16:00 UTC)
+  const targetDate = new Date("2025-01-31T15:30:00Z").getTime();
 
-  // State to store the remaining time
+  // State for countdown
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  // Function to calculate the remaining time
   function calculateTimeLeft() {
     const now = new Date().getTime();
-    const difference = targetTime - now;
+    const difference = targetDate - now;
 
     if (difference <= 0) {
       return { expired: true };
@@ -47,7 +42,6 @@ const Hero = () => {
     };
   }
 
-  // Effect to update countdown every second
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
@@ -102,7 +96,7 @@ const Hero = () => {
 
           {/* Buy Now button */}
           <a
-            href="#"
+            href="https://www.pinksale.finance/solana/launchpad/5d5DUZXuV4Hhsyvo9m9qZEu1SfYmYZuEyEjRGCKXNFmP"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-md text-lg"
