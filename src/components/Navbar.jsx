@@ -20,7 +20,7 @@ const Navbar = () => {
       </ul>
 
       <a
-        href="https://www.pinksale.finance/solana/launchpad/5d5DUZXuV4Hhsyvo9m9qZEu1SfYmYZuEyEjRGCKXNFmP"
+        href="https://raydium.io/swap/?inputMint=So11111111111111111111111111111111111111112&outputMint=94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-yellow-500 hover:bg-yellow-600 text-white px-2 py-2 rounded-md hidden md:block "
@@ -29,7 +29,7 @@ const Navbar = () => {
       </a>
 
       <a
-              href="https://www.pinksale.finance/solana/launchpad/5d5DUZXuV4Hhsyvo9m9qZEu1SfYmYZuEyEjRGCKXNFmP"
+              href="https://raydium.io/swap/?inputMint=So11111111111111111111111111111111111111112&outputMint=94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY"
               className="bg-yellow-500 hover:bg-yellow-600 text-white px-2 py-2 rounded-md md:hidden font-semibold"
       >
         BUY $MEME
@@ -50,7 +50,7 @@ const Navbar = () => {
             <li><a href="#roadmap" className="hover:text-yellow-500" onClick={() => setIsMenuOpen(false)}>Roadmap</a></li>
             <li><a href="#faq" className="hover:text-yellow-500" onClick={() => setIsMenuOpen(false)}>FAQ</a></li>
             <a
-              href="https://www.pinksale.finance/solana/launchpad/5d5DUZXuV4Hhsyvo9m9qZEu1SfYmYZuEyEjRGCKXNFmP"
+              href="https://raydium.io/swap/?inputMint=So11111111111111111111111111111111111111112&outputMint=94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-500 hover:bg-yellow-600 text-white px-2 py-2 rounded-md text-center"
