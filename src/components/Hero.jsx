@@ -69,19 +69,7 @@ const Hero = () => {
           engage, and earn!
         </p>
 
-        {/* Countdown Timer */}
-        <div className="text-2xl font-bold mb-6">
-          {timeLeft.expired ? (
-            <span className="text-green-500 text-3xl">🚀 Presale is Live! 🚀</span>
-          ) : (
-            <p>
-              Presale starts in:{" "}
-              <span className="text-yellow-500">
-                {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
-              </span>
-            </p>
-          )}
-        </div>
+       
 
         <div className="flex justify-center gap-6 mb-6">
           {/* Join the Community button */}
@@ -96,7 +84,7 @@ const Hero = () => {
 
           {/* Buy Now button */}
           <a
-            href="https://www.pinksale.finance/solana/launchpad/5d5DUZXuV4Hhsyvo9m9qZEu1SfYmYZuEyEjRGCKXNFmP"
+            href="https://raydium.io/swap/?inputMint=So11111111111111111111111111111111111111112&outputMint=94fzsMkuHAuFP4J8iMZS43euWr2CLtuvwLgyjPHyqcnY"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-md text-lg"
