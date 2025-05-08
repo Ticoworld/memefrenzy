@@ -8,7 +8,7 @@ const PartnersSection = () => {
     { name: 'DexScreener', role: 'Analytics Partner', logo: '/dex.jpg' },
     { name: 'PinkSale', role: 'Launchpad Partner', logo: '/Pinksale.png', link: 'https://www.pinksale.finance/solana/launchpad/5d5DUZXuV4Hhsyvo9m9qZEu1SfYmYZuEyEjRGCKXNFmP' },
     { name: 'Dexview', role: 'Launchpad Partner', logo: '/dexview.png', link: 'https://dexview.com' },
-    { name: 'Dexview', role: 'Staking Partner', logo: '/stream.jpg', link: 'https://app.streamflow.finance/staking/solana/mainnet/4z4axj8d5FPscw3ZxGW6xqPnmwLtrqYJTYMLDqv4hRf9'}
+    { name: 'StreamFlow', role: 'Staking Partner', logo: '/stream.jpg', link: 'https://app.streamflow.finance/staking/solana/mainnet/4z4axj8d5FPscw3ZxGW6xqPnmwLtrqYJTYMLDqv4hRf9'}
   ];
 
   return (
