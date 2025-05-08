@@ -9,6 +9,8 @@ import Roadmap from './components/Roadmap';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import PartnersSection from "./components/PartnersSection";
+import StakingSection from './StakingSection';
+
 
 function App() {
   useEffect(() => {
@@ -22,6 +24,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <StakingSection />
       <Tokenomics />
       <Roadmap />
       <FAQ />
