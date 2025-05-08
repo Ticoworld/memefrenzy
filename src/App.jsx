@@ -9,7 +9,7 @@ import Roadmap from './components/Roadmap';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import PartnersSection from "./components/PartnersSection";
-import StakingSection from './StakingSection';
+import StakingSection from './components/StakingSection';
 
 
 function App() {
