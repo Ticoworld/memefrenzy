@@ -19,36 +19,6 @@ const Hero = () => {
     });
   };
 
-  // Target Date (Jan 31, 2025, at 16:00 UTC)
-  const targetDate = new Date("2025-01-31T15:30:00Z").getTime();
-
-  // State for countdown
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  function calculateTimeLeft() {
-    const now = new Date().getTime();
-    const difference = targetDate - now;
-
-    if (difference <= 0) {
-      return { expired: true };
-    }
-
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-      expired: false,
-    };
-  }
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div
@@ -69,9 +39,7 @@ const Hero = () => {
           engage, and earn!
         </p>
 
-       
-
-        <div className="flex justify-center gap-6 mb-6">
+        <div className="flex justify-center gap-6 mb-6 flex-wrap">
           {/* Join the Community button */}
           <a
             href="https://t.me/memefrenzysol"
@@ -90,6 +58,16 @@ const Hero = () => {
             className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-md text-lg"
           >
             Buy Now
+          </a>
+
+          {/* New Stake Now button */}
+          <a
+            href="https://app.streamflow.finance/staking/solana/mainnet/4z4axj8d5FPscw3ZxGW6xqPnmwLtrqYJTYMLDqv4hRf9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-md text-lg"
+          >
+            Stake Now
           </a>
         </div>
 
