@@ -2,7 +2,7 @@ import React from 'react';
 
 const StakingSection = () => {
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-gray-800 py-16 px-6 rounded-3xl shadow-2xl border-2 border-yellow-500/30 mb-12">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-800 py-16 px-6 shadow-2xl border-2 border-yellow-500/30 pb-12">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
           <img 
@@ -13,7 +13,7 @@ const StakingSection = () => {
           
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              Stake $FRENZY, Earn More Frenzy!
+              Stake $MEME, Earn More MEME!
             </h2>
             <p className="text-lg text-gray-300 mb-6">
               Partnering with <span className="text-yellow-500 font-bold">Streamflow</span>, we bring you 
