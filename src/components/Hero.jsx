@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router";
 import Swal from "sweetalert2";
 
 const Hero = () => {
@@ -87,6 +88,25 @@ const Hero = () => {
             </div>
           </div>
         </div>
+       <div className="text-center">
+          <Link
+            to="/airdrop"
+            className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-8 rounded-full text-lg transition-all transform hover:scale-105 relative group"
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Participate Now
+            </span>
+            <div className="absolute inset-0 bg-yellow-500/30 rounded-full filter blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+          </Link>
+          
+          <p className="mt-4 text-gray-400 text-sm">
+            Connect your wallet to check eligibility and available rewards
+          </p>
+        </div>
+        
       </div>
     </div>
   );
