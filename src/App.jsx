@@ -47,6 +47,7 @@ import PendingApprovals from "./pages/Admin/PendingApprovals";
 import AdminUsers from "./pages/Admin/AdminUsers";
 import AirdropClaimDetails from "./pages/Admin/AirdropClaimDetails";
 import DistributedAirdrops from "./pages/Admin/DistributedAirdrops";
+import AirdropSection from "./components/AirdropSection";
 
 // Use the RPC endpoint from your CONFIG
 const rpcEndpoint = CONFIG.QUICKNODE_API_KEY; // Ensure this is your full QuickNode URL
@@ -81,7 +82,7 @@ function App() {
                   <>
                     <Navbar />
                     <Hero />
-                    <Airdrop />
+                    <AirdropSection />
                     <About />
                     <StakingSection />
                     <Tokenomics />

@@ -20,7 +20,6 @@ const Hero = () => {
     });
   };
 
-
   return (
     <div
       className="relative bg-cover bg-center h-screen flex items-center justify-center text-center text-white"
@@ -88,25 +87,36 @@ const Hero = () => {
             </div>
           </div>
         </div>
-       <div className="text-center">
+        <div className="text-center mt-8 animate-bounce-slow">
           <Link
             to="/airdrop"
-            className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-8 rounded-full text-lg transition-all transform hover:scale-105 relative group"
+            className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-black font-bold py-4 px-8 rounded-full text-lg transition-all transform hover:scale-105 relative group"
           >
             <span className="relative z-10 flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
-              Participate Now
+              🪂 Claim Your MEME Airdrop!
             </span>
             <div className="absolute inset-0 bg-yellow-500/30 rounded-full filter blur-xl group-hover:blur-2xl transition-all duration-300"></div>
           </Link>
-          
-          <p className="mt-4 text-gray-400 text-sm">
-            Connect your wallet to check eligibility and available rewards
+
+          <p className="mt-4 text-yellow-300/80 text-sm font-medium">
+            Earn up to 17% rewards • Limited time only •{" "}
+            <span className="text-yellow-500">No minimum lock</span>
           </p>
         </div>
-        
       </div>
     </div>
   );
