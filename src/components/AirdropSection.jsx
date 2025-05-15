@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const AirdropSection = () => {
   return (
-    <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-12 px-6 rounded-3xl border-2 border-yellow-500/30 my-12 transform hover:scale-[1.005] transition-all duration-300">
+    <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-12 px-6  border-2 border-yellow-500/30 transform hover:scale-[1.005] transition-all duration-300">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
